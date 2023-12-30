@@ -1,4 +1,6 @@
-export const menu = [
+import { IDish } from "../types/IDish";
+
+export const menu: IDish[] = [
   {
     id: "ribs-brisket-and-burnt-ends",
     type: "bbq",
@@ -49,16 +51,6 @@ export const menu = [
     price: 45,
     rate: 5,
     country: "New York, NY"
-  },
-  {
-    id: "artisanal-bread-choose-your-own-4-pack",
-    type: "breads",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132426/bread-choose-your-own-4-pack.78f96938f1a3a5bc6a7fefa564bf878c.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Grateful Bread Company",
-    dsc: "Artisanal Bread - Choose Your Own 4 Pack",
-    price: 59,
-    rate: 5,
-    country: "Sacramento, CA"
   },
   {
     id: "corn-cheese-bread-2-pack",
@@ -151,37 +143,6 @@ export const menu = [
     rate: 4,
     country: "New York, NY"
   },
-  // ======
-  {
-    id: "signature-chocolate-collection-25-piece",
-    type: "chocolates",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/106318/large-signature-collection.6f21146f2b1945d80f7931d69b763ba7.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Knipschildt Chocolatier",
-    dsc: "Signature Chocolate Collection Chocolate Gift Box - 25 Piece",
-    price: 60,
-    rate: 4,
-    country: "Norwalk, CT"
-  },
-  {
-    id: "20482-chocolate-truffle-cake",
-    type: "chocolates",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/131261/chocolate-truffle-cake.289d1e58e4f0ca2dd39568fba9c17e91.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Ferrara Bakery",
-    dsc: "Chocolate Truffle Cake",
-    price: 59,
-    rate: 5,
-    country: "New York, NY"
-  },
-  {
-    id: "signature-macarons-chocolates-16-pieces",
-    type: "chocolates",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/132333/signature-macarons-chocolates-16-pieces.6072c1e13db3f2ebca89db228f421715.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Sucré",
-    dsc: "Signature Macarons + Chocolates - 16 Pieces",
-    price: 65,
-    rate: 4,
-    country: "New Orleans, LA"
-  },
   // ========
   {
     id: "15259-german-chocolate-killer-brownie-tin-pack",
@@ -192,16 +153,6 @@ export const menu = [
     price: 39.99,
     rate: 4,
     country: "Dayton, OH"
-  },
-  {
-    id: "world-famous-banana-pudding-party-sized",
-    type: "desserts",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/84893/world-famous-banana-pudding-bowl-64-oz.85af650f8f51512f8f3181a11d6587d6.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Magnolia Bakery",
-    dsc: "World Famous Banana Pudding Bowl (64 oz.)",
-    price: 56,
-    rate: 4,
-    country: "New York, NY"
   },
   // ==========
   {
@@ -297,16 +248,6 @@ export const menu = [
   },
   // ====
   {
-    id: "2-lou-malnatis-deep-dish-pizzas",
-    type: "pizzas",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/97981/2-lou-malnatis-deep-dish-pizzas.bf0fe065d251a9cca3925b269d443a27.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Lou Malnati's Pizza",
-    dsc: "2 Lou Malnati's Deep Dish Pizzas",
-    price: 67.99,
-    rate: 4,
-    country: "Chicago, IL"
-  },
-  {
     id: "23699-choose-your-own-thin-crust-pizza-4-pack",
     type: "pizzas",
     img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/89781/choose-your-own-thin-crust-pizza-4-pack.b928a2008eab50c65dc87e59b5952190.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
@@ -326,16 +267,6 @@ export const menu = [
     rate: 4,
     country: "West Haven, CT"
   },
-  {
-    id: "6-lou-malnatis-deep-dish-pizzas",
-    type: "pizzas",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/106829/6-lou-malnatis-deep-dish-pizzas.f59993181da5d295668c8a6fb856055e.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Lou Malnati's Pizza",
-    dsc: "6 Lou Malnati's Deep Dish Pizzas",
-    price: 116.99,
-    rate: 4,
-    country: "Chicago, IL"
-  },
   // ====
   {
     id: "pastrami-burnt-end-sandwich-kit",
@@ -346,16 +277,6 @@ export const menu = [
     price: 109,
     rate: 5,
     country: "Los Angeles, CA"
-  },
-  {
-    id: "favorite-sloppy-joe-sandwich",
-    type: "sandwiches",
-    img: "https://goldbelly.imgix.net/uploads/showcase_media_asset/image/67768/new-jersey-sloppy-joe-sandwich-feeds-3.b866e4c84e09ad65cb8c6b9f4949ec7d.jpg?ixlib=react-9.0.2&auto=format&ar=1%3A1",
-    name: "Town Hall Deli",
-    dsc: "Favorite Sloppy Joe Sandwich",
-    price: 79,
-    rate: 5,
-    country: "South Orange, NJ"
   },
   {
     id: "sandwich-best-sellers-4-pack",
